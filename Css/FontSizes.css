@@ -1,0 +1,90 @@
+h5{ font-weight: 500; }
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    h1{ font-size: 25px; }
+    h2{ font-size: 23px; }
+    h3{ font-size: 21px; }
+    h4{ font-size: 19px; }
+    h5{ font-size: 17px; }
+    p{  font-size: 15px; }
+    .menu .interior .header button{
+        font-size: 15px;
+    }
+    .menu .interior a{
+        font-size: 12px;
+    }
+    article .cartas .carta h3{font-size: 17px;}
+
+    article .cartas .carta p{font-size: 12px;}
+
+    article ol li, article ul li{ font-size: 17px; }
+    header .alwaysOnTop{
+        font-size:22px;
+    }
+}
+@media screen and (min-width: 768px)and (max-width: 1024px){
+    h1{ font-size: 28px; }
+    h2{ font-size: 26px; }
+    h3{ font-size: 24px; }
+    h4{ font-size: 22px; }
+    h5{ font-size: 20px; }
+    p{  font-size: 18px; }
+    .menu .interior .header button{
+        font-size: 18px;
+    }
+    .menu .interior a{
+        font-size: 14px;
+    }
+    article .cartas .carta h3{font-size: 20px;}
+
+    article .cartas .carta p{font-size: 14px;}
+
+    article ol li, article ul li{ font-size: 20px; }
+    header .alwaysOnTop{
+        font-size:25px;
+    }
+}
+@media screen and (min-width: 1024px)and (max-width: 1440px){
+    h1{ font-size: 31px; }
+    h2{ font-size: 29px; }
+    h3{ font-size: 27px; }
+    h4{ font-size: 25px; }
+    h5{ font-size: 23px; }
+    p{  font-size: 21px; }
+    .menu .interior .header button{
+        font-size: 21px;
+    }
+    .menu .interior a{
+        font-size: 16px;
+    }
+    article .cartas .carta h3{font-size: 23px;}
+
+    article .cartas .carta p{font-size: 16px;}
+
+    article ol li, article ul li{ font-size: 23px; }
+    header .alwaysOnTop{
+        font-size:28px;
+    }
+}
+@media screen and (min-width: 1440px){
+    h1{ font-size: 34px; }
+    h2{ font-size: 32px; }
+    h3{ font-size: 30px; }
+    h4{ font-size: 28px; }
+    h5{ font-size: 26px; }
+    p{  font-size: 24px; }
+    .menu .interior .header button{
+        font-size: 24px;
+    }
+    .menu .interior a{
+        font-size: 18px;
+    }
+    article .cartas .carta h3{font-size: 26px;}
+
+    article .cartas .carta p{font-size: 18px;}
+
+    article ol li, article ul li{ font-size: 26px; }
+    header .alwaysOnTop{
+        font-size:31px;
+    }
+}

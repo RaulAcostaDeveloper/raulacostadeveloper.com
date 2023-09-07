@@ -1,0 +1,24 @@
+.arrows{
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+.arrows .arrow {
+    width: 30px;
+    margin-top: 10px;
+}
+.arrows .arrow img{
+    width: 100%;
+    padding: 5px;
+    border-radius:5px;
+}
+@media (min-width: 768px){
+    .arrows{
+        right: 40px;
+    }
+    .arrows .arrow {
+        width: 40px;
+
+    }
+}

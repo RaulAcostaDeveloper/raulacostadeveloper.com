@@ -1,0 +1,81 @@
+header{
+    width: 100%;
+}
+header .alwaysOnTop{
+    width: 100%;
+    cursor: pointer;
+}
+header .alwaysOnTop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+header .alwaysOnTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .alwaysOnTop{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header .baseNegra{
+    width: 100%;
+    height: 45vh;
+}
+header .baseNegra, header .alwaysOnTop{
+    -webkit-box-shadow: 0px 10px 10px 10px rgba(26, 29, 29);
+    -moz-box-shadow: 0px 10px 10px 10px rgba(26, 29, 29);
+    box-shadow: 0px 10px 10px 10px rgba(26, 29, 29);
+}
+
+header .contenedorImagen{
+    position:relative;
+    height: 0;
+}
+header .contenedorImagen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header .contenedorImagen img{
+    position: absolute;
+    /* La mitad de la altura de la imágen */
+    bottom: -75px;
+}
+header .contenedorImagen img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+header .contenedorImagen img{
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(26, 29, 29);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(26, 29, 29);
+    box-shadow: 0px 0px 10px 5px rgba(26, 29, 29);
+}
+header .info{
+    width: 100%;
+    height: 55vh;
+}
+header .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .info .titulos{
+    text-align: center;
+}
+header .info .titulos .titulo1{
+    font-weight: 500;
+    font-size: 18px;
+}
+header .info .titulos .titulo2{
+    font-size: 25px;
+}
+header .info .titulos .titulo3{
+    font-size: 22px;
+}
+header .info .titulos .titulo4{
+    font-size: 22px;
+}

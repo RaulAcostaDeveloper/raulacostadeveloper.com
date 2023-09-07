@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(243, 245, 246);
+}
+.menu .interior{
+    background-color: rgb(243, 245, 246);
+}
+.menu .interior a:hover{
+    background-color: rgba(81, 82, 84, 0.1);
+}
+.menu .interior .header button{
+    background-color: rgb(26, 29, 29);
+    color: rgb(243, 245, 246);
+}
+.menu .exterior{
+    background-color: rgba(81, 82, 84, 0.5);
+}
+header .baseNegra{
+    background-color: rgb(26, 29, 29);
+}
+img{
+    background-color: rgb(243, 245, 246);
+}
+header .alwaysOnTop{
+    background-color: rgb(26, 29, 29);
+    color: rgb(243, 245, 246);
+}
+header .mediosDeContacto{
+    background-color: rgb(26, 29, 29);
+}
+header .mediosDeContacto .medioDeContacto p{
+    color: rgb(243, 245, 246);
+}
+p{
+    color: rgb(26, 29, 29);
+}
+
+.blueParraf{
+    color: rgb(15, 101, 150);
+}
+a{
+    color: rgb(255, 174, 0);
+}
+article .cartas .carta{
+    color: rgb(243, 245, 246);
+    background-color: rgb(26, 29, 29);
+}
+article .cartas .carta p{
+    color: rgb(243, 245, 246);
+
+}
+.CanvasArcoiris{
+    background-color: rgb(26, 29, 29);
+}
+.tituloCanvasArcoiris h3{
+    background-color: rgb(26, 29, 29);
+    color: rgb(243, 245, 246);
+}
+.arrows .arrow img:hover{
+    background-color: rgb(218, 221, 223);
+}

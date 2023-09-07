@@ -1,0 +1,38 @@
+header .mediosDeContacto{
+    display: none;
+    height: 95vh;
+    width: 100%;
+    position: fixed;
+    top: 5vh;
+    left: 0;
+    z-index: 4;
+    align-content:space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header .mediosDeContacto .medioDeContacto{
+    width: 100%;
+}
+header .mediosDeContacto .medioDeContacto a{
+    width: 100%;
+    text-decoration: none;
+}
+header .mediosDeContacto .medioDeContacto a .contenedorImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header .mediosDeContacto .medioDeContacto a p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+header .mediosDeContacto .medioDeContacto img{
+    width: 30%;
+    background-color: transparent;
+}
+@media (min-width: 768px){
+    header .mediosDeContacto .medioDeContacto{
+        width: 30%;
+    }
+}

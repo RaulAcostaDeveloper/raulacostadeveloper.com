@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO y keywords -->
+    <meta name="keywords" content="React,
+    JavaScript,
+    HTML5,
+    CSS3,
+    Redux,
+    Webpack,
+    Git,
+    NPM,
+    Babel,
+    Jest,
+    React Native,
+    Responsive design,
+    Mobile-first,
+    Cross-browser compatibility,
+    Performance optimization,
+    User experience (UX),
+    User interface (UI),
+    Animation,
+    Web standards,
+    Code quality,
+    Accessibility,
+    Problem solving,
+    Debugging,
+    Testing,
+    API integration,
+    Front-end frameworks,
+    Agile methodology,
+    TypeScript,
+    Next.js">
+
+    <!-- el texto de los <a> deben contener palabras clave -->
+    <!-- 160 caracteres máximo -->
+    <meta name="description" content="Tengo experiencia en el desarrollo de aplicaciones web front-end utilizando tecnologías como React, JavaScript, HTML5 y CSS3. Mi enfoque está en crear experiencias web de alta calidad que sean receptivas, escalables y fáciles de usar. Me enfoco en la optimización de rendimiento y la compatibilidad cruzada para garantizar que cada proyecto entregado supere las expectativas del cliente. Como especialista en React, he trabajado en proyectos de todo tipo, desde pequeños sitios web hasta aplicaciones web complejas. También tengo experiencia en integración de API, pruebas y depuración, y en la implementación de prácticas de codificación de alta calidad y estándares web. Contáctame para saber cómo puedo ayudarte a llevar tu proyecto al siguiente nivel.">
+    <!-- 70 caracteres máximo -->
+    <title>Proyectos y ejemplos</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./Imagenes/miFoto.ico">
+    <!-- Link a todos los estilos -->
+    <link rel="stylesheet" href="./Css/Colores.css">
+    <link rel="stylesheet" href="./Css/FontSizes.css">
+    <link rel="stylesheet" href="./Css/Footer.css">
+    <link rel="stylesheet" href="./Css/Global.css">
+    <link rel="stylesheet" href="./Css/Header.css">
+    <link rel="stylesheet" href="./Css/ArticulosGeneral.css">
+    <link rel="stylesheet" href="./Css/Cartas.css">
+    <link rel="stylesheet" href="./Css/Contacto.css">
+    <link rel="stylesheet" href="./Css/Arrows.css">
+    <link rel="stylesheet" href="./Css/Menu.css">
+    <link rel="stylesheet" href="./Css/Certificados.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-221GCEW8BT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-221GCEW8BT');
+</script>
+<body>
+    <script>
+        // Ruta actual
+        let urlActual = window.location.href;
+        // Generador de Ids para elementos reactivos
+        let ids = []
+        for (let index = 0; index < 10; index++) {
+            ids[index] = Math.floor(Math.random() * 100000);
+        }
+    </script>
+    <div class="iconoMenu">
+        <button onclick="toggleMenu()">
+            <img src="./Imagenes/menu.png" alt="Icono Menu">
+        </button>
+    </div>
+    <div id="componenteMenu" class="menu">
+        <div id="componenteMenuInterior" class="interior" onclick="toggleMenu()">
+            <div class="header">
+                <button>Menu</button>
+            </div>
+            <div class="scroll">
+                <a href="https://raulacostadeveloper.com/">Portafolio</a>
+                <a href="https://raulacostadeveloper.com/diplomasYCertificados.html">Diplomas y certificados</a>
+                <a href="https://raulacostadeveloper.com/proyectosYEjemplos.html">Proyectos y ejemplos</a>
+                <a href="https://raulacostadeveloper.com/BlogsPages/MisEscritos/">Mis escritos</a>
+                <a href="https://raulacostadeveloper.com/BlogsPages/MisArticulos/">Mis artículos</a>
+            </div>
+            <div class="footer">
+                <h6>Angel Raúl Acosta Rojas</h6>
+                <hr>
+                <h6>Desarrollador Front End</h6>
+            </div>
+        </div>
+        <div class="exterior" onclick="toggleMenu()">
+        </div>
+    </div>
+    <div class="arrows">
+        <div class="arrow">
+            <a href="#header"><img src="./Imagenes/uparrowbold.png" alt="uparrowbold"></a>
+        </div>
+        <div class="arrow">
+            <a href="#footer"><img src="./Imagenes/downarrowbold.png" alt="downarrowbold"></a>
+        </div>
+    </div>
+    <header id="header">
+        <div class="alwaysOnTop" onclick="despliegaAbajo(`${ids[0]}`,'flex'); reproducirClick()">
+            Contacto
+        </div>
+        <div class="mediosDeContacto" id="0" abierto="false">
+            <div class="medioDeContacto">
+                <a target="_blank"  href="mailto:raulacostadeveloper@outlook.com?Subject=Contacto%20de%20raulacostaservicio.com%20mail" onclick="reproducirClick()">
+                    <div class="contenedorImg">
+                        <img src="./Imagenes/OutlookImg.svg" alt="Medio de contacto Outlook">
+                    </div>
+                    <p>Correo Electrónico</p>
+                </a>
+            </div>
+            <div class="medioDeContacto">
+                <a target="_blank"  href="https://www.linkedin.com/in/raulacostaservicio/" onclick="reproducirClick()">
+                    <div class="contenedorImg">
+                        <img src="./Imagenes/linkedin.png" alt="Medio de contacto Outlook">
+                    </div>
+                    <p>Linkedin</p>
+                </a>
+            </div>
+        </div>
+        <div class="baseNegra"></div>
+        <div class="contenedorImagen">
+            <img src="./Imagenes/miFoto.jpg" alt="Imágen portada">
+        </div>
+        <div class="info">
+            <div class="titulos">
+                <h5>Angel Raúl Acosta Rojas</h5>
+                <h1>Ingeniero en Sistemas Computacionales</h1>
+                <h2>Desarrollador Web</h2>
+                <h3>Programador Front End</h3>
+                <h4>Especializado en React.js</h4>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article>
+            <h2>Proyectos y ejemplos</h2>
+        </article>
+        <article id="aplicacionesWeb">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[1]}`); reproducirClick()">
+                <h2>Aplicaciones web</h2>
+                <img id="1img" src="./Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="1" abierto="true">
+                <div class="cartas">
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://control-quincenal2.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/ControlQuincenal2.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Aplicación en React.js</h3>
+                            <p>Aplicación para tener un control de dinero quincenal.</p>
+                            <h3>#React.js #Redux #Unit Test #ResponsiveDesign #JavaScript</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://raulacosta95.github.io/AlarmaOnline/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/alarmaOnline.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Aplicación Web</h3>
+                            <p>Aplicación de alarma hecha con JQuery.</p>
+                            <h3>#Html, #Css, #JavaScript, #JQuery</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://github.com/RaulAcostaDeveloper/ListaDeComprasApp">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/ListaDeComprasApp.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Aplicación en React Native</h3>
+                            <p>Aplicación que sive como lista de compras.</p>
+                            <h3>#React Native #JavaScript</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://balance-general-app-qvkc.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/BalanceGeneralApp.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Aplicación en Next.js</h3>
+                            <p>Aplicación para manejar el balance general.</p>
+                            <h3>#Next.js #Css #JavaScript #ServerLess #Vercel</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://my-wallet-count-3myk.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/MyWalletCount.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Aplicación en React.js</h3>
+                            <p>Aplicación para controlar el dinero de la quincena.</p>
+                            <h3>#React #Css #Redux #JavaScript #UnitTest #ServerLess #Vercel</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://raulacostadeveloper.github.io/MiControlDeGastos_PWA/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/principalMiControlDeGastos.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Aplicación Web Progresiva</h3>
+                            <p>Aplicación para manejar cantidades de dinero.</p>
+                            <h3>#Html, #Css, #JavaScript, #ProgresiveWebApp, #ResponsiveDesign</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article id="landingPages">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[2]}`); reproducirClick()">
+                <h2>Landing pages</h2>
+                <img id="2img" src="./Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="2" abierto="true">
+                <div class="cartas">
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://landing-page-band.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/landingpageband.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Landing Page</h3>
+                            <p>Landing page para banda de rock, responsive, con animaciones, con barra de búsqueda, videos, etc.</p>
+                            <h3>#React.js #ResponsiveDesign</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://asaderodelabuelo.com/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/principalAsadero.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Landing Page</h3>
+                            <p>Página web de restaurante, con logo animado.</p>
+                            <h3>#Html, #Css, #JavaScript, #GSAP, #ResponsiveDesign</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://raulacosta95.github.io/BlackHair_Page/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/blackHair.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Landing Page</h3>
+                            <p>Template de landing page.</p>
+                            <h3>#Html, #Css, #JavaScript, #GSAP</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://raulacostadeveloper.github.io/Plantilla1_LandingPage/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/PlantillaLandingPage1.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Landing Page</h3>
+                            <p>Template de landing page.</p>
+                            <h3>#Html, #Css, #JavaScript</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://raulacostadeveloper.github.io/HeaderTemplate1/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/HeaderTemplate1.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Template Web</h3>
+                            <p>Maquetado de header con cuidado al detalle.</p>
+                            <h3>#Html #Css #ResponsiveDesign #JavaScript</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article id="experimentos">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[3]}`); reproducirClick()">
+                <h2>Experimentos</h2>
+                <img id="3img" src="./Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="3" abierto="true">
+                <div class="cartas">
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://controles-personaje-web.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/controles-personaje-web.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Personaje que reacciona a los controles</h3>
+                            <p>El personaje escucha el teclado y responde a los estímulos.</p>
+                            <h3>#React.js</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://controles-web.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/controles-web.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Controles web</h3>
+                            <p>Escucha el teclado y realiza acciones para mejorar la interacción de la interfaz con el usuario.</p>
+                            <h3>#React.js</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://elementos-interactivos.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/elementosInteractivos.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Elementos interactivos</h3>
+                            <p>Serie de elementos interactivos desarrollados por mi.</p>
+                            <h3>#React.js</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://prueba-tecnica-natch.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/prueba-natch.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Consumo API Rest + Login + Subida de archivos</h3>
+                            <p>Consumo y muestra de datos, sección de subida de archivos, con visualización por carrucel. Usuario admin password admin .</p>
+                            <h3>#React.js #JavaScript</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://pares-de-divisas.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/pares-de-divisas.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Consumo de API Rest</h3>
+                            <p>Aplicación que trae datos de pares de divisas.</p>
+                            <h3>#React.js #JavaScript</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://algoritmos-react.vercel.app/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/AlgoritmosEnReact.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>Algoritmos en React</h3>
+                            <p>28 algoritmos clásicos, resueltos, en componentes interactivos.</p>
+                            <h3>#React #ResponsiveDesign #JavaScript</h3>
+                        </div>
+                    </a>
+                    <a class="carta" onclick="reproducirPop()" target="_blank" href="https://github.com/RaulAcostaDeveloper/ToDoListConsolaNode/">
+                        <div class="imageContent">
+                            <img src="./Imagenes/Proyectos/ToDoListConsola.png" alt="Captura del proyecto mencionado">
+                        </div>
+                        <div class="info">
+                            <h3>To Do List Consola</h3>
+                            <p>Aplicación por consola que es un clásico To Do List, para añadir, eliminar, actualizar y mostrar elementos.</p>
+                            <h3>#Node.js</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h2>Agradecimiento</h2>
+            <p>¡Gracias por leer mi artículo y espero que te haya resultado útil e informativo! 
+                En mi sitio web, me esfuerzo por brindarte contenido de calidad y 
+                relevante en diversos temas. 
+            </p>
+            <p>Si te gustó este artículo y crees que aporta valor, ¡no dudes en compartirlo! Compartir
+                 es una excelente manera de ayudarme a llegar a más personas.</p>
+            <p>Si tienes alguna sugerencia o comentario, no dudes en hacérmelo saber.</p>
+            <p>¡Gracias por visitar mi sitio web y espero verte pronto!</p>
+            <h4>Un saludo internauta.</h4>
+        </article>
+        <article>
+            <h2>Si puedes apoyame</h2>
+            <p>Si te gustan mis artículos apoyame, para que pueda seguir compartiendolos.</p>
+            <h3><a href="https://www.paypal.com/donate/?hosted_button_id=DBQQ3QRD8P6BS" target="_blank">Paypal</a></h3>
+            <h3><a href="https://patreon.com/raulacostadev?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" target="_blank">Patreon</a></h3>
+        </article>
+    </section>
+    <footer id="footer">
+        <div class="tituloCanvasArcoiris">
+            <h3>Hover Me</h3>
+        </div>
+        <div class="CanvasArcoiris" onpointermove="reproducirPop()" onclick="reproducirPop()">
+            <canvas id="CanvasArcoiris" ></canvas>
+        </div>
+    </footer>
+    <script src="./js/ElementosReactivos.js"></script>
+    <script src="./js/AsignadorIds.js"></script>
+    <script src="./js/Sonidos.js"></script>
+    <script src="./js//Menu.js"></script>
+    <script src="./js/CanvasArcoiris.js"></script>
+</body>
+</html>

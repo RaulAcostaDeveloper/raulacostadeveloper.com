@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO y keywords -->
+    <meta name="keywords" content="palabra,clave">
+    <!-- el texto de los <a> deben contener palabras clave -->
+    <!-- 160 caracteres máximo -->
+    <meta name="description" content="La descripción">
+    <!-- 70 caracteres máximo -->
+    <title>Angel Raul Acosta Developer Ingeniero Desarrollador Front End</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../Imagenes/miFoto.ico">
+    <!-- Link a todos los estilos -->
+    <link rel="stylesheet" href="../../Css/Colores.css">
+    <link rel="stylesheet" href="../../Css/FontSizes.css">
+    <link rel="stylesheet" href="../../Css/Footer.css">
+    <link rel="stylesheet" href="../../Css/Global.css">
+    <link rel="stylesheet" href="../../Css/Header.css">
+    <link rel="stylesheet" href="../../Css/ArticulosGeneral.css">
+    <link rel="stylesheet" href="../../Css/Cartas.css">
+    <link rel="stylesheet" href="../../Css/Contacto.css">
+    <link rel="stylesheet" href="../../Css/Arrows.css">
+    <link rel="stylesheet" href="../../Css/Menu.css">
+    <link rel="stylesheet" href="../../Css/Buscador.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-221GCEW8BT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-221GCEW8BT');
+</script>
+<body>
+    <script>
+        // Ruta actual
+        let urlActual = window.location.href;
+        // Generador de Ids para elementos reactivos
+        let ids = []
+        for (let index = 0; index < 10; index++) {
+            ids[index] = Math.floor(Math.random() * 100000);
+        }
+    </script>
+    <div class="iconoMenu">
+        <button onclick="toggleMenu()">
+            <img src="../../Imagenes/menu.png" alt="Icono Menu">
+        </button>
+    </div>
+    <div class="arrows">
+        <div class="arrow">
+            <a href="#header"><img src="../../Imagenes/uparrowbold.png" alt="uparrowbold"></a>
+        </div>
+        <div class="arrow">
+            <a href="#footer"><img src="../../Imagenes/downarrowbold.png" alt="downarrowbold"></a>
+        </div>
+    </div>
+    <div id="componenteMenu" class="menu">
+        <div id="componenteMenuInterior" class="interior" onclick="toggleMenu()">
+            <div class="header">
+                <button>Menu</button>
+            </div>
+            <div class="scroll">
+                <a href="https://raulacostadeveloper.com/">Portafolio</a>
+                <a href="https://raulacostadeveloper.com/diplomasYCertificados.html">Diplomas y certificados</a>
+                <a href="https://raulacostadeveloper.com/proyectosYEjemplos.html">Proyectos y ejemplos</a>
+                <a href="https://raulacostadeveloper.com/BlogsPages/MisEscritos/">Mis escritos</a>
+                <a href="https://raulacostadeveloper.com/BlogsPages/MisArticulos/">Mis artículos</a>
+            </div>
+            <div class="footer">
+                <h6>Angel Raúl Acosta Rojas</h6>
+                <hr>
+                <h6>Desarrollador Front End</h6>
+            </div>
+        </div>
+        <div class="exterior" onclick="toggleMenu()">
+        </div>
+    </div>
+    <header id="header">
+        <div class="alwaysOnTop" onclick="despliegaAbajo(`${ids[0]}`,'flex'); reproducirClick()">
+            Contacto
+        </div>
+        <div class="mediosDeContacto" id="0" abierto="false">
+            <div class="medioDeContacto">
+                <a htarget="_blank"  href="mailto:raulacostadeveloper@outlook.com?Subject=Contacto%20de%20raulacostaservicio.com%20mail" onclick="reproducirClick()">
+                    <div class="contenedorImg">
+                        <img src="../../Imagenes/OutlookImg.svg" alt="Medio de contacto Outlook">
+                    </div>
+                    <p>Correo Electrónico</p>
+                </a>
+            </div>
+            <div class="medioDeContacto">
+                <a htarget="_blank"  href="https://www.linkedin.com/in/raulacostaservicio/" onclick="reproducirClick()">
+                    <div class="contenedorImg">
+                        <img src="../../Imagenes/linkedin.png" alt="Medio de contacto Outlook">
+                    </div>
+                    <p>Linkedin</p>
+                </a>
+            </div>
+        </div>
+        <div class="baseNegra"></div>
+        <div class="contenedorImagen">
+            <img src="../../Imagenes/miFoto.jpg" alt="Imágen portada">
+        </div>
+        <div class="info">
+            <div class="titulos">
+                <h1>Mis escritos</h1>
+                <h5>Por Raúl Acosta Developer</h5>
+                <br>
+                <h3><a href="https://raulacostadeveloper.com/">Visita mi página web</a></h3>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="buscador">
+            <article>
+                <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[2]}`); reproducirClick()">
+                    <h2>Buscar artículos</h2>
+                    <img id="2img" src="../../Imagenes/downarrowbold.png" alt="downarrowbold">
+                </div>
+                <div id="2" abierto="true" class="desplegar">
+                    <input type="text" id="searchInput" placeholder="Buscar artículo" oninput="search()">
+                    
+                    <div id="searchResults"></div>
+                </div>
+            </article>
+        </div>
+        <article id="queson">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[1]}`); reproducirClick()">
+                <h2>Qué son mis artículos</h2>
+                <img id="1img" src="../../Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="1" abierto="true" class="desplegar">
+                <p>Son una serie de artículos escritos por mi.</p>
+                <p>Me gusta escribir sobre tecnología, habilidades para mejorar tu carrera y profesion.</p>
+                <p>Impulsos para aportar más valor a donde sea que estés.</p>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h2>Agradecimiento</h2>
+            <p>¡Gracias por leer mi artículo y espero que te haya resultado útil e informativo! 
+                En mi sitio web, me esfuerzo por brindarte contenido de calidad y 
+                relevante en diversos temas. 
+            </p>
+            <p>Si te gustó este artículo y crees que aporta valor, ¡no dudes en compartirlo! Compartir
+                 es una excelente manera de ayudarme a llegar a más personas.</p>
+            <p>Si tienes alguna sugerencia o comentario, no dudes en hacérmelo saber.</p>
+            <p>¡Gracias por visitar mi sitio web y espero verte pronto!</p>
+            <h4>Un saludo internauta.</h4>
+        </article>
+        <article>
+            <h2>Si puedes apoyame</h2>
+            <p>Si te gustan mis artículos apoyame, para que pueda seguir compartiendolos.</p>
+            <h3><a href="https://www.paypal.com/donate/?hosted_button_id=DBQQ3QRD8P6BS" target="_blank">Paypal</a></h3>
+            <h3><a href="https://patreon.com/raulacostadev?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" target="_blank">Patreon</a></h3>
+        </article>
+    </section>
+    <footer id="footer">
+        <div class="tituloCanvasArcoiris">
+            <h3>Hover Me</h3>
+        </div>
+        <div class="CanvasArcoiris" onpointermove="reproducirPop()" onclick="reproducirPop()">
+            <canvas id="CanvasArcoiris" ></canvas>
+        </div>
+    </footer>
+    <script src="../../js/AsignadorIds.js"></script>
+    <script src="../../js/CanvasArcoiris.js"></script>
+    <script src="../../js/ElementosReactivos.js"></script>
+    <script src="../../js/Menu.js"></script>
+    <script src="../../js/Sonidos.js"></script>
+    <script src="./Js/buscador.js"></script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Desarrollo de aplicaciones accesibles,
+    Guía completa,
+    Accesibilidad web,
+    Diseño inclusivo,
+    Usabilidad,
+    Interfaz de usuario,
+    Diseño responsivo,
+    Experiencia del usuario,
+    Accesibilidad para discapacitados,
+    Diseño universal,
+    Tecnologías de asistencia,
+    Cumplimiento de estándares,
+    Diseño web accesible,
+    Accesibilidad digital,
+    Diseño orientado al usuario,
+    Desarrollo de software accesible,
+    Programación accesible,
+    Diseño de experiencia de usuario,
+    Diseño de interacción,
+    Accesibilidad móvil">
+    <!-- el texto de los <a> deben contener palabras clave -->
+    <!-- 160 caracteres máximo -->
+    <meta name="description" content="Mi guía completa de desarrollo de aplicaciones
+     accesibles te enseñará todo lo que necesitas saber para llegar a todos los usuarios,
+     independientemente de sus habilidades y discapacidades. Descubre cómo diseñar y 
+     desarrollar aplicaciones accesibles y cómo cumplir con los estándares de 
+     accesibilidad web para mejorar la usabilidad, la experiencia del usuario y la 
+     interacción en dispositivos móviles y en la web. Desde el diseño inclusivo hasta
+     las tecnologías de asistencia, mi guía te proporcionará los conocimientos
+     necesarios para crear aplicaciones accesibles y mejorar la accesibilidad digital
+     para todos. ¡Aprende cómo hacer que tus aplicaciones sean accesibles hoy mismo!">
+    <title>Desarrollo de aplicaciones accesibles: Guía completa para llegar a todos los
+         usuarios</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../Imagenes/miFoto.ico">
+    <!-- Link a todos los estilos -->
+    <link rel="stylesheet" href="../../Css/Colores.css">
+    <link rel="stylesheet" href="../../Css/FontSizes.css">
+    <link rel="stylesheet" href="../../Css/Footer.css">
+    <link rel="stylesheet" href="../../Css/Global.css">
+    <link rel="stylesheet" href="../../Css/Header.css">
+    <link rel="stylesheet" href="../../Css/ArticulosGeneral.css">
+    <link rel="stylesheet" href="../../Css/Cartas.css">
+    <link rel="stylesheet" href="../../Css/Contacto.css">
+    <link rel="stylesheet" href="../../Css/Arrows.css">
+    <link rel="stylesheet" href="../../Css/Menu.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-221GCEW8BT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-221GCEW8BT');
+</script>
+<body>
+    <script>
+        // Ruta actual
+        let urlActual = window.location.href;
+        // Generador de Ids para elementos reactivos
+        let ids = []
+        for (let index = 0; index < 10; index++) {
+            ids[index] = Math.floor(Math.random() * 100000);
+        }
+    </script>  
+    <div class="iconoMenu">
+        <button onclick="toggleMenu()">
+            <img src="../../Imagenes/menu.png" alt="Icono Menu">
+        </button>
+    </div>
+    <div class="arrows">
+        <div class="arrow">
+            <a href="#header"><img src="../../Imagenes/uparrowbold.png" alt="uparrowbold"></a>
+        </div>
+        <div class="arrow">
+            <a href="#footer"><img src="../../Imagenes/downarrowbold.png" alt="downarrowbold"></a>
+        </div>
+    </div>
+    <div id="componenteMenu" class="menu">
+        <div id="componenteMenuInterior" class="interior" onclick="toggleMenu()">
+            <div class="header">
+                <button>Menu</button>
+            </div>
+            <div class="scroll">
+                <a href="https://raulacostadeveloper.com/">Portafolio</a>
+                <a href="https://raulacostadeveloper.com/diplomasYCertificados.html">Diplomas y certificados</a>
+                <a href="https://raulacostadeveloper.com/proyectosYEjemplos.html">Proyectos y ejemplos</a>
+                <a href="https://raulacostadeveloper.com/BlogsPages/MisEscritos/">Mis escritos</a>
+                <a href="https://raulacostadeveloper.com/BlogsPages/MisArticulos/">Mis artículos</a>
+            </div>
+            <div class="footer">
+                <h6>Angel Raúl Acosta Rojas</h6>
+                <hr>
+                <h6>Desarrollador Front End</h6>
+            </div>
+        </div>
+        <div class="exterior" onclick="toggleMenu()">
+        </div>
+    </div>
+    <header id="header">
+        <div class="alwaysOnTop" onclick="despliegaAbajo(`${ids[0]}`,'flex'); reproducirClick()">
+            Contacto
+        </div>
+        <div class="mediosDeContacto" id="0" abierto="false">
+            <div class="medioDeContacto">
+                <a htarget="_blank"  href="mailto:raulacostadeveloper@outlook.com?Subject=Contacto%20de%20raulacostaservicio.com%20mail" onclick="reproducirClick()">
+                    <div class="contenedorImg">
+                        <img src="../../Imagenes/OutlookImg.svg" alt="Medio de contacto Outlook">
+                    </div>
+                    <p>Correo Electrónico</p>
+                </a>
+            </div>
+            <div class="medioDeContacto">
+                <a htarget="_blank"  href="https://www.linkedin.com/in/raulacostaservicio/" onclick="reproducirClick()">
+                    <div class="contenedorImg">
+                        <img src="../../Imagenes/linkedin.png" alt="Medio de contacto Outlook">
+                    </div>
+                    <p>Linkedin</p>
+                </a>
+            </div>
+        </div>
+        <div class="baseNegra"></div>
+        <div class="contenedorImagen">
+            <img src="../../Imagenes/miFoto.jpg" alt="Imágen portada">
+        </div>
+
+        <!-- Muy importante el título del tema -->
+        <div class="info">
+            <div class="titulos">
+                <h5>Bienvenido a mi blog</h5>
+                <h1>Desarrollo de aplicaciones accesibles: Guía completa para llegar a todos los usuarios</h1>
+                <br>
+                <h3><a href="https://raulacostadeveloper.com/">Visita mi página web</a></h3>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article id="introduccion">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[1]}`); reproducirClick()">
+                <h2>Introducción</h2>
+                <img id="1img" src="../../Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="1" abierto="true" class="desplegar">
+                 <p>El desarrollo de aplicaciones accesibles es fundamental para garantizar que todos los usuarios,
+                    independientemente de sus habilidades o discapacidades, puedan acceder y utilizar tus aplicaciones 
+                    en la web o en dispositivos móviles.</p>
+                 <p>En este artículo, te presentamos una guía completa sobre cómo 
+                    desarrollar aplicaciones accesibles y cumplir con los estándares de accesibilidad web. Aprenderás
+                    cómo diseñar y desarrollar aplicaciones inclusivas y cómo mejorar la experiencia del usuario y la
+                    usabilidad para todos los usuarios.</p>
+                 <p>Desde la programación accesible hasta el diseño de interacción
+                    y la implementación de tecnologías de asistencia, nuestra guía te proporcionará los conocimientos y
+                    herramientas necesarias para crear aplicaciones accesibles que lleguen a todos los usuarios. </p>
+                 <p>¡Sigue leyendo para aprender más sobre cómo hacer que tus aplicaciones sean accesibles hoy mismo!</p>
+            </div>
+        </article>
+        <article id="Laaccesibilidadenaplicacionesparapersonascondiscapacidades">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[2]}`); reproducirClick()">
+                <h2>La accesibilidad en aplicaciones para personas con discapacidades</h2>
+                <img id="2img" src="../../Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="2" abierto="true" class="desplegar">
+                <p>En la actualidad, el acceso a las tecnologías de la información 
+                    es esencial para cualquier persona en la sociedad moderna. </p>
+                
+                <p>Las aplicaciones móviles y las aplicaciones web son una parte 
+                    integral de nuestra vida cotidiana, y es importante que estén 
+                    diseñadas y desarrolladas de manera que sean accesibles para 
+                    todos los usuarios, independientemente de sus habilidades o 
+                    discapacidades.</p>
+                
+                <p>En este artículo, te presentamos todo lo que necesitas 
+                    saber sobre la accesibilidad en aplicaciones para personas 
+                    con discapacidades. Aprenderás cómo diseñar y desarrollar 
+                    aplicaciones accesibles y cómo mejorar la experiencia del 
+                    usuario y la usabilidad para todos los usuarios.</p>
+                
+                <h3>¿Por qué es importante la accesibilidad en aplicaciones?</h3>
+                
+                <p>La accesibilidad en aplicaciones es fundamental para 
+                    garantizar que todas las personas puedan acceder y 
+                    utilizar tus aplicaciones en la web o en dispositivos móviles.</p>
+                 
+                <p>Las personas con discapacidades visuales, auditivas o físicas, 
+                    por ejemplo, pueden encontrar barreras en las aplicaciones que 
+                    dificultan su acceso y uso. Sin embargo, al diseñar y desarrollar 
+                    aplicaciones accesibles, se pueden superar estas barreras y permitir 
+                    que todas las personas disfruten de la tecnología.</p>
+                
+                <p>Además, la accesibilidad en aplicaciones también es 
+                    importante desde un punto de vista legal. Muchos países 
+                    tienen leyes y regulaciones que exigen que las aplicaciones 
+                    sean accesibles para todas las personas, y no cumplir con estas 
+                    leyes puede llevar a multas y sanciones.</p>
+                   
+                <h3>Cómo hacer que tus aplicaciones sean accesibles</h3>
+                    
+                <p>Ahora que sabes por qué es importante la accesibilidad en aplicaciones,
+                    es hora de aprender cómo hacer que tus aplicaciones sean accesibles. </p>
+                    
+                     
+                <h3>Aquí te presentamos algunos consejos clave para tener en cuenta:</h3>
+                    
+                    <h4>-Diseño inclusivo:</h4>
+                    <p>El diseño inclusivo es fundamental para asegurar que 
+                        todas las personas puedan utilizar tus aplicaciones. Esto implica considerar
+                        las necesidades de todos los usuarios desde el inicio del proceso de diseño
+                        y desarrollo.</p>
+                    
+                    <h4>-Usabilidad:</h4>
+                    <p>La usabilidad es crucial para garantizar que tus aplicaciones
+                        sean fáciles de usar para todas las personas. Asegúrate de que las interfaces
+                        de usuario sean intuitivas y fáciles de navegar.</p>
+                    
+                    <h4>-Tecnologías de asistencia:</h4>
+                    <p>Las tecnologías de asistencia, como los lectores de
+                        pantalla o los dispositivos de entrada alternativos, pueden ser esenciales para que las
+                        personas con discapacidades utilicen tus aplicaciones. Asegúrate de que tus aplicaciones
+                        sean compatibles con estas tecnologías.</p>
+                    
+                    <h4>-Cumplimiento de estándares:</h4>
+                    <p> Los estándares de accesibilidad web, como las
+                        Pautas de Accesibilidad para el Contenido Web (WCAG), proporcionan un conjunto
+                        de directrices para garantizar que las aplicaciones sean accesibles.Asegúrate
+                        de cumplir con estos estándares.</p>
+                    
+
+                    <h4>-Pruebas de accesibilidad:</h4>
+                    <p> Las pruebas de accesibilidad son fundamentales para
+                        asegurar que tus aplicaciones sean realmente accesibles. Realiza pruebas con 
+                        personas con discapacidades para identificar y solucionar problemas de accesibilidad.</p>
+                    
+                <h3>Conclusión</h3>
+                <p>En conclusión, la accesibilidad en aplicaciones es esencial para 
+                    garantizar que todas las personas, incluyendo aquellas con discapacidades,
+                    puedan acceder y utilizar la aplicación de manera efectiva.</p>
+                
+                <p>Al diseñar y desarrollar aplicaciones con la accesibilidad en mente,
+                    podemos asegurarnos de que estamos alcanzando a todos los usuarios 
+                    y proporcionando una experiencia de usuario óptima para todos. </p>
+                
+                <p>Al seguir los consejos y estándares de accesibilidad mencionados 
+                    en este artículo, puedes hacer que tus aplicaciones sean accesibles 
+                    para una amplia gama de personas con diferentes necesidades.</p>
+                
+                <p>Con la accesibilidad en aplicaciones, podemos crear un mundo más 
+                    inclusivo y accesible para todos.</p> 
+            </div>
+        </article>
+        <article id="certificadosenaccesibilidad">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[3]}`); reproducirClick()">
+                <h2>Certificados en accesibilidad</h2>
+                <img id="3img" src="../../Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="3" abierto="true">
+                <p>La accesibilidad en la web se ha convertido en un tema crítico 
+                    en los últimos años, y cada vez es más importante garantizar
+                    que todas las personas puedan acceder a la información y 
+                    los servicios en línea. Una forma en que las empresas y 
+                    organizaciones pueden demostrar su compromiso con la accesibilidad 
+                    es a través de la obtención de un certificado de accesibilidad. </p>|
+            
+                 <p>En este artículo, exploramos los diferentes niveles de certificados 
+                    en accesibilidad y lo que significan para tu sitio web o aplicación.</p>
+                 
+                <h3>¿Qué es un certificado de accesibilidad?</h3>
+                <p>Un certificado de accesibilidad es un documento que demuestra que un sitio web
+                    o aplicación cumple con ciertos estándares de accesibilidad. Estos estándares son
+                    establecidos por organizaciones internacionales como la W3C (Consorcio World Wide Web)
+                    y se centran en garantizar que todas las personas, incluyendo aquellas con discapacidades,
+                    puedan acceder y utilizar el sitio web o aplicación de manera efectiva.</p>
+                
+                
+                <h3>Niveles de certificados de accesibilidad</h3>
+                <p>Hay varios niveles de certificados de accesibilidad que se pueden obtener. Estos
+                    niveles se basan en los estándares establecidos por la W3C y se centran en diferentes
+                    áreas de accesibilidad. Los tres niveles más comunes son:</p>
+               
+                
+                <h3>Nivel A</h3>
+                <p>El nivel A se refiere a los estándares más básicos de accesibilidad.
+                    Al obtener un certificado de nivel A, se garantiza que el sitio web o
+                    aplicación cumple con los estándares más básicos de accesibilidad,
+                    como proporcionar texto alternativo para las imágenes y asegurarse de
+                    que los formularios sean fáciles de navegar para personas con 
+                    discapacidades visuales.</p>
+                
+                
+                <h3>Nivel AA</h3>
+                <p>El nivel AA se refiere a los estándares más avanzados de accesibilidad.
+                    Al obtener un certificado de nivel AA, se garantiza que el sitio web o
+                    aplicación cumple con los estándares más avanzados de accesibilidad,
+                    como proporcionar subtítulos para los videos y asegurarse de que el 
+                    contraste de color sea lo suficientemente alto para personas con 
+                    discapacidades visuales.</p>
+                
+                
+                <h3> Nivel AAA</h3>
+                <p>El nivel AAA se refiere a los estándares más estrictos de accesibilidad. 
+                    Al obtener un certificado de nivel AAA, se garantiza que el sitio web o 
+                    aplicación cumple con los estándares más estrictos de accesibilidad, como
+                    proporcionar descripciones de audio para los videos y asegurarse de que el
+                    contenido sea fácilmente navegable para personas con discapacidades cognitivas.</p>
+            
+                    
+                <h3>¿Por qué obtener un certificado de accesibilidad?</h3>
+                <p>Obtener un certificado de accesibilidad es una forma de demostrar que tu
+                    sitio web o aplicación está comprometido con la accesibilidad. Esto puede
+                    ser importante para las empresas y organizaciones que desean asegurarse
+                    de que todas las personas puedan acceder a sus servicios en línea. Además,
+                    algunos países y organizaciones pueden requerir un certificado de accesibilidad
+                    como parte de sus regulaciones o políticas de inclusión.</p>
+                
+                
+                <h3>Conclusión</h3>
+                <p>La accesibilidad en la web es esencial para garantizar que todas las personas 
+                    puedan acceder y utilizar los servicios en línea. Obtener un certificado de 
+                    accesibilidad es una forma de demostrar su compromiso con la accesibilidad y 
+                    garantizar que su sitio web o aplicación cumple con los estándares de accesibilidad
+                    más altos.</p>
+           
+            </div>
+        </article>
+        <article id="Herramientasdetesteoautomaticodeaccesibilidad">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[4]}`); reproducirClick()">
+                <h2>Herramientas de testeo automático de accesibilidad</h2>
+                <img id="4img" src="../../Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="4" abierto="true">  
+                <p>Las herramientas de testeo automático de accesibilidad son programas informáticos
+                    que analizan un sitio web o aplicación y proporcionan informes sobre posibles 
+                    problemas de accesibilidad.</p>
+                <p>Estas herramientas buscan errores en áreas como la
+                    navegación, el color, el contraste, la semántica y la estructura del sitio web o 
+                    aplicación.</p>
+                <p>Las herramientas de testeo automático de accesibilidad pueden ahorrar
+                    tiempo y esfuerzo en comparación con las pruebas manuales, lo que las convierte en
+                    una opción popular para desarrolladores y diseñadores.</p>
+                    
+           
+                <h3>Herramientas de testeo automático de accesibilidad populares</h3>
+                <h4>Hay varias herramientas de testeo automático de accesibilidad disponibles en línea.
+                    Algunas de las más populares son:</h4>
+                
+                
+                
+                <h3>1. AChecker</h3>
+                <p>AChecker es una herramienta gratuita de testeo automático de accesibilidad que proporciona
+                    informes detallados sobre los problemas de accesibilidad de un sitio web o aplicación. AChecker
+                    se integra con varias plataformas de desarrollo, lo que facilita su uso en proyectos existentes.</p>
+                
+                
+                
+                <h3>2. Wave</h3>
+                <p>Wave es otra herramienta popular de testeo automático de accesibilidad que proporciona informes detallados
+                    sobre los problemas de accesibilidad de un sitio web o aplicación. Wave es gratuito y fácil de usar, lo que
+                    la convierte en una buena opción para aquellos que no tienen experiencia en pruebas de accesibilidad.</p>                
+                
+                
+                <h3>3. Axe</h3>
+                <p>Axe es una herramienta de testeo automático de accesibilidad de código abierto que se integra con varias 
+                    plataformas de desarrollo, como Chrome, Firefox y Visual Studio Code. Axe proporciona informes detallados
+                    sobre los problemas de accesibilidad y ofrece sugerencias sobre cómo corregirlos.</p>
+                
+                
+                
+                <h3>¿Por qué usar herramientas de testeo automático de accesibilidad?</h3>
+                <p>Las herramientas de testeo automático de accesibilidad son útiles porque pueden ahorrar tiempo y esfuerzo,
+                    especialmente para aquellos que no tienen experiencia en pruebas de accesibilidad.</p>
+                <p> Además, las herramientas de testeo automático de accesibilidad pueden ayudar a garantizar que un sitio web o aplicación sea accesible
+                    para todas las personas, incluidas aquellas con discapacidades visuales, auditivas o cognitivas.
+                </p>
+  
+                <h3>Conclusión</h3>
+                <p>Las herramientas de testeo automático de accesibilidad son una herramienta valiosa para desarrolladores y diseñadores
+                    que desean asegurarse de que su sitio web o aplicación sea accesible para todas las personas.</p>
+                <p> Las herramientas de testeo automático de accesibilidad pueden ahorrar tiempo y esfuerzo, y ayudar a garantizar que un sitio web o aplicación cumpla
+                    con los estándares de accesibilidad. Al utilizar herramientas de testeo automático de accesibilidad, podemos crear un
+                    mundo en el que todas las personas puedan acceder y utilizar los servicios en línea. </p>
+ 
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h2>Agradecimiento</h2>
+            <p>¡Gracias por leer mi artículo y espero que te haya resultado útil e informativo! 
+                En mi sitio web, me esfuerzo por brindarte contenido de calidad y 
+                relevante en diversos temas. 
+            </p>
+            <p>Si te gustó este artículo y crees que aporta valor, ¡no dudes en compartirlo! Compartir
+                 es una excelente manera de ayudarme a llegar a más personas.</p>
+            <p>Si tienes alguna sugerencia o comentario, no dudes en hacérmelo saber.</p>
+            <p>¡Gracias por visitar mi sitio web y espero verte pronto!</p>
+            <h4>Un saludo internauta.</h4>
+        </article>
+        <article>
+            <h2>Si puedes apoyame</h2>
+            <p>Si te gustan mis artículos apoyame, para que pueda seguir compartiendolos.</p>
+            <h3><a href="https://www.paypal.com/donate/?hosted_button_id=DBQQ3QRD8P6BS" target="_blank">Paypal</a></h3>
+            <h3><a href="https://patreon.com/raulacostadev?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" target="_blank">Patreon</a></h3>
+        </article>
+    </section>
+    <footer id="footer">
+        <div class="tituloCanvasArcoiris">
+            <h3>Hover Me</h3>
+        </div>
+        <div class="CanvasArcoiris" onpointermove="reproducirPop()" onclick="reproducirPop()">
+            <canvas id="CanvasArcoiris" ></canvas>
+        </div>
+    </footer>
+    <script src="../../js/AsignadorIds.js"></script>
+    <script src="../../js/CanvasArcoiris.js"></script>
+    <script src="../../js/ElementosReactivos.js"></script>
+    <script src="../../js/Menu.js"></script>
+    <script src="../../js/Sonidos.js"></script>
+</body>
+</html>

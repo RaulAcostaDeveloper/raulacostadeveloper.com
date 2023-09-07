@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO y keywords -->
+    <meta name="keywords" content="React,
+    JavaScript,
+    HTML5,
+    CSS3,
+    Redux,
+    Webpack,
+    Git,
+    NPM,
+    Babel,
+    Jest,
+    React Native,
+    Responsive design,
+    Mobile-first,
+    Cross-browser compatibility,
+    Performance optimization,
+    User experience (UX),
+    User interface (UI),
+    Animation,
+    Web standards,
+    Code quality,
+    Accessibility,
+    Problem solving,
+    Debugging,
+    Testing,
+    API integration,
+    Front-end frameworks,
+    Agile methodology,
+    TypeScript,
+    Next.js">
+
+    <!-- el texto de los <a> deben contener palabras clave -->
+    <!-- 160 caracteres máximo -->
+    <meta name="description" content="Tengo experiencia en el desarrollo de aplicaciones web front-end utilizando tecnologías como React, JavaScript, HTML5 y CSS3. Mi enfoque está en crear experiencias web de alta calidad que sean receptivas, escalables y fáciles de usar. Me enfoco en la optimización de rendimiento y la compatibilidad cruzada para garantizar que cada proyecto entregado supere las expectativas del cliente. Como especialista en React, he trabajado en proyectos de todo tipo, desde pequeños sitios web hasta aplicaciones web complejas. También tengo experiencia en integración de API, pruebas y depuración, y en la implementación de prácticas de codificación de alta calidad y estándares web. Contáctame para saber cómo puedo ayudarte a llevar tu proyecto al siguiente nivel.">
+    <!-- 70 caracteres máximo -->
+    <title>Diplomas y certificados</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./Imagenes/miFoto.ico">
+    <!-- Link a todos los estilos -->
+    <link rel="stylesheet" href="./Css/Colores.css">
+    <link rel="stylesheet" href="./Css/FontSizes.css">
+    <link rel="stylesheet" href="./Css/Footer.css">
+    <link rel="stylesheet" href="./Css/Global.css">
+    <link rel="stylesheet" href="./Css/Header.css">
+    <link rel="stylesheet" href="./Css/ArticulosGeneral.css">
+    <link rel="stylesheet" href="./Css/Cartas.css">
+    <link rel="stylesheet" href="./Css/Contacto.css">
+    <link rel="stylesheet" href="./Css/Arrows.css">
+    <link rel="stylesheet" href="./Css/Menu.css">
+    <link rel="stylesheet" href="./Css/Certificados.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-221GCEW8BT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-221GCEW8BT');
+</script>
+<body>
+    <script>
+        // Ruta actual
+        let urlActual = window.location.href;
+        // Generador de Ids para elementos reactivos
+        let ids = []
+        for (let index = 0; index < 10; index++) {
+            ids[index] = Math.floor(Math.random() * 100000);
+        }
+    </script>
+    <div class="iconoMenu">
+        <button onclick="toggleMenu()">
+            <img src="./Imagenes/menu.png" alt="Icono Menu">
+        </button>
+    </div>
+    <div class="arrows">
+        <div class="arrow">
+            <a href="#header"><img src="./Imagenes/uparrowbold.png" alt="uparrowbold"></a>
+        </div>
+        <div class="arrow">
+            <a href="#footer"><img src="./Imagenes/downarrowbold.png" alt="downarrowbold"></a>
+        </div>
+    </div>
+    <div id="componenteMenu" class="menu">
+        <div id="componenteMenuInterior" class="interior" onclick="toggleMenu()">
+            <div class="header">
+                <button>Menu</button>
+            </div>
+            <div class="scroll">
+                <a href="https://raulacostadeveloper.com/">Portafolio</a>
+                <a href="https://raulacostadeveloper.com/diplomasYCertificados.html">Diplomas y certificados</a>
+                <a href="https://raulacostadeveloper.com/proyectosYEjemplos.html">Proyectos y ejemplos</a>
+                <a href="https://raulacostadeveloper.com/BlogsPages/MisEscritos/">Mis escritos</a>
+                <a href="https://raulacostadeveloper.com/BlogsPages/MisArticulos/">Mis artículos</a>
+            </div>
+            <div class="footer">
+                <h6>Angel Raúl Acosta Rojas</h6>
+                <hr>
+                <h6>Desarrollador Front End</h6>
+            </div>
+        </div>
+        <div class="exterior" onclick="toggleMenu()">
+        </div>
+    </div>
+    <header id="header">
+        <div class="alwaysOnTop" onclick="despliegaAbajo(`${ids[0]}`,'flex'); reproducirClick()">
+            Contacto
+        </div>
+        <div class="mediosDeContacto" id="0" abierto="false">
+            <div class="medioDeContacto">
+                <a target="_blank"  href="mailto:raulacostadeveloper@outlook.com?Subject=Contacto%20de%20raulacostaservicio.com%20mail" onclick="reproducirClick()">
+                    <div class="contenedorImg">
+                        <img src="./Imagenes/OutlookImg.svg" alt="Medio de contacto Outlook">
+                    </div>
+                    <p>Correo Electrónico</p>
+                </a>
+            </div>
+            <div class="medioDeContacto">
+                <a target="_blank"  href="https://www.linkedin.com/in/raulacostaservicio/" onclick="reproducirClick()">
+                    <div class="contenedorImg">
+                        <img src="./Imagenes/linkedin.png" alt="Medio de contacto Outlook">
+                    </div>
+                    <p>Linkedin</p>
+                </a>
+            </div>
+        </div>
+        <div class="baseNegra"></div>
+        <div class="contenedorImagen">
+            <img src="./Imagenes/miFoto.jpg" alt="Imágen portada">
+        </div>
+        <div class="info">
+            <div class="titulos">
+                <h5>Angel Raúl Acosta Rojas</h5>
+                <h1>Ingeniero en Sistemas Computacionales</h1>
+                <h2>Desarrollador Web</h2>
+                <h3>Programador Front End</h3>
+                <h4>Especializado en React.js</h4>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article>
+            <h2>Diplomas y certificados</h2>
+        </article>
+        <article id="certificadosSoftware">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[1]}`); reproducirClick()">
+                <h2>De desarrollo de software</h2>
+                <img id="1img" src="./Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="1" abierto="true">
+                <div class="certificados">
+                    <a href="./Imagenes/Certificados/Sass.jpg">
+                        <img src="./Imagenes/Certificados/Sass.jpg" alt="React.js, Redux y Next.js">
+                        <h5>-Sass-</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/Prompt engineering.jpg">
+                        <img src="./Imagenes/Certificados/Prompt engineering.jpg" alt="React.js, Redux y Next.js">
+                        <h5>Prompt engineering</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/Diseño para programadores.jpg">
+                        <img src="./Imagenes/Certificados/Diseño para programadores.jpg" alt="React.js, Redux y Next.js">
+                        <h5>Diseño para programadores</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/ReactReduxyNextjs2022.jpg">
+                        <img src="./Imagenes/Certificados/ReactReduxyNextjs2022.jpg" alt="React.js, Redux y Next.js">
+                        <h5>React.js, Redux y Next.js</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/React.png">
+                        <img src="./Imagenes/Certificados/React.png" alt="">
+                        <h5>React.js</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/ReactNative.jpg">
+                        <img src="./Imagenes/Certificados/ReactNative.jpg" alt="">
+                        <h5>React Native</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/ResponsiveWebDesign.png">
+                        <img src="./Imagenes/Certificados/ResponsiveWebDesign.png" alt="">
+                        <h5>Responsive Web Design</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/BasicoDeJavaScript.png">
+                        <img src="./Imagenes/Certificados/BasicoDeJavaScript.png" alt="">
+                        <h5>JavaScript</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/JavaScriptAlgorithmsAndDataStructtures.png">
+                        <img src="./Imagenes/Certificados/JavaScriptAlgorithmsAndDataStructtures.png" alt="">
+                        <h5>JavaScript Algoritmos Y Estructura De Datos</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/AcademiaCells_page-0001.jpg">
+                        <img src="./Imagenes/Certificados/AcademiaCells_page-0001.jpg" alt="">
+                        <h5>Academia Cells</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/Bootstrap.png">
+                        <img src="./Imagenes/Certificados/Bootstrap.png" alt="">
+                        <h5>Bootstrap</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/FundamentosDeIngenieríaDeSoftware.png">
+                        <img src="./Imagenes/Certificados/FundamentosDeIngenieríaDeSoftware.png" alt="">
+                        <h5>Fundamentos De Ingeniería De Software</h5>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article id="certificadosProfesional">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[2]}`); reproducirClick()">
+                <h2>De desarrollo profesional</h2>
+                <img id="2img" src="./Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="2" abierto="true">
+                <div class="certificados">
+                    <a href="./Imagenes/Certificados/SAFeForTeamsCourse.png">
+                        <img src="./Imagenes/Certificados/SAFeForTeamsCourse.png" alt="">
+                        <h5>Participación Scaled Agile Framework For Teams</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/SAFeForTeamsCourse.png">
+                        <img src="./Imagenes/Certificados/SAFeForTeamsCourse.png" alt="">
+                        <h5>Scaled Agile Framework For Teams</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/ScrumFoundationProfessionalCertificate.png">
+                        <img src="./Imagenes/Certificados/ScrumFoundationProfessionalCertificate.png" alt="">
+                        <h5>Scrum Foundation Professional</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/DesarrolloSeguro-E6BCFDB1A001.png">
+                        <img src="./Imagenes/Certificados/DesarrolloSeguro-E6BCFDB1A001.png" alt="">
+                        <h5>Proceso De Desarrollo de Software Seguro</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/DesarrolloSeguro-E6BCFDB1A001.png">
+                        <img src="./Imagenes/Certificados/DesarrolloSeguro-E6BCFDB1A001.png" alt="">
+                        <h5>Desarrollo Seguro</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/SecurityAwareness_page-0001.jpg">
+                        <img src="./Imagenes/Certificados/SecurityAwareness_page-0001.jpg" alt="">
+                        <h5>Security Awareness</h5>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article id="certificadosPersonal">
+            <div class="tituloDesplegable" onclick="despliegaAbajo(`${ids[3]}`); reproducirClick()">
+                <h2>De desarrollo personal</h2>
+                <img id="3img" src="./Imagenes/downarrowbold.png" alt="downarrowbold">
+            </div>
+            <div id="3" abierto="true">
+                <div class="certificados">
+                    <a href="./Imagenes/Certificados/InglesB1-B2.jpg">
+                        <img src="./Imagenes/Certificados/InglesB1-B2.jpg" alt="">
+                        <h5>Curso de inglés nivel B1 B2</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/Constanciadelenguaextrangerainglés_page-0001.jpg">
+                        <img src="./Imagenes/Certificados/Constanciadelenguaextrangerainglés_page-0001.jpg" alt="">
+                        <h5>Constancia de lengua extranjera inglés</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/CodigodeEtica-1.png">
+                        <img src="./Imagenes/Certificados/CodigodeEtica-1.png" alt="">
+                        <h5>Código De Ética</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/EstrategiasParaAprenderEnLineaEfectivamente.png">
+                        <img src="./Imagenes/Certificados/EstrategiasParaAprenderEnLineaEfectivamente.png" alt="">
+                        <h5>Estrategias Para Aprender En Línea Efectivamente</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/Inteligenciaemocional.png">
+                        <img src="./Imagenes/Certificados/Inteligenciaemocional.png" alt="">
+                        <h5>Inteligencia Emocional</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/diploma-marca-personal_page-0001.jpg">
+                        <img src="./Imagenes/Certificados/diploma-marca-personal_page-0001.jpg" alt="">
+                        <h5>Marca Personal</h5>
+                    </a>
+                    <a href="./Imagenes/Certificados/CertificadoLiderazgoOrientadoalasPersonas_page-0001.jpg">
+                        <img src="./Imagenes/Certificados/CertificadoLiderazgoOrientadoalasPersonas_page-0001.jpg" alt="">
+                        <h5>Liderazgo Orientado a las Personas</h5>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h2>Agradecimiento</h2>
+            <p>¡Gracias por leer mi artículo y espero que te haya resultado útil e informativo! 
+                En mi sitio web, me esfuerzo por brindarte contenido de calidad y 
+                relevante en diversos temas. 
+            </p>
+            <p>Si te gustó este artículo y crees que aporta valor, ¡no dudes en compartirlo! Compartir
+                 es una excelente manera de ayudarme a llegar a más personas.</p>
+            <p>Si tienes alguna sugerencia o comentario, no dudes en hacérmelo saber.</p>
+            <p>¡Gracias por visitar mi sitio web y espero verte pronto!</p>
+            <h4>Un saludo internauta.</h4>
+        </article>
+        <article>
+            <h2>Si puedes apoyame</h2>
+            <p>Si te gustan mis artículos apoyame, para que pueda seguir compartiendolos.</p>
+            <h3><a href="https://www.paypal.com/donate/?hosted_button_id=DBQQ3QRD8P6BS" target="_blank">Paypal</a></h3>
+            <h3><a href="https://patreon.com/raulacostadev?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" target="_blank">Patreon</a></h3>
+        </article>
+    </section>
+    <footer id="footer">
+        <div class="tituloCanvasArcoiris">
+            <h3>Hover Me</h3>
+        </div>
+        <div class="CanvasArcoiris" onpointermove="reproducirPop()" onclick="reproducirPop()">
+            <canvas id="CanvasArcoiris" ></canvas>
+        </div>
+    </footer>
+    <script src="./js/ElementosReactivos.js"></script>
+    <script src="./js/AsignadorIds.js"></script>
+    <script src="./js/Sonidos.js"></script>
+    <script src="./js//Menu.js"></script>
+    <script src="./js/CanvasArcoiris.js"></script>
+</body>
+</html>
