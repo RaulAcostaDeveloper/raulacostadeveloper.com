@@ -44,47 +44,13 @@
             ids[index] = Math.floor(Math.random() * 100000);
         }
     </script>
-    <div class="iconoMenu">
-        <button onclick="toggleMenu()">
-            <img src="../../Imagenes/menu.png" alt="Icono Menu">
-        </button>
-    </div>
-    <div class="arrows">
-        <div class="arrow">
-            <a href="#header"><img src="../../Imagenes/uparrowbold.png" alt="uparrowbold"></a>
-        </div>
-        <div class="arrow">
-            <a href="#footer"><img src="../../Imagenes/downarrowbold.png" alt="downarrowbold"></a>
-        </div>
-    </div>
-    <div id="componenteMenu" class="menu">
-        <div id="componenteMenuInterior" class="interior" onclick="toggleMenu()">
-            <div class="header">
-                <button>Menu</button>
-            </div>
-            <div class="scroll">
-                <a href="https://raulacostadeveloper.com/">Portafolio</a>
-                <a href="https://raulacostadeveloper.com/diplomasYCertificados.html">Diplomas y certificados</a>
-                <a href="https://raulacostadeveloper.com/proyectosYEjemplos.html">Proyectos y ejemplos</a>
-                <a href="https://raulacostadeveloper.com/BlogsPages/MisEscritos/">Mis escritos</a>
-                <a href="https://raulacostadeveloper.com/BlogsPages/MisArticulos/">Mis artículos</a>
-            </div>
-            <div class="footer">
-                <h6>Angel Raúl Acosta Rojas</h6>
-                <hr>
-                <h6>Desarrollador Front End</h6>
-            </div>
-        </div>
-        <div class="exterior" onclick="toggleMenu()">
-        </div>
-    </div>
     <header id="header">
         <div class="alwaysOnTop" onclick="despliegaAbajo(`${ids[0]}`,'flex'); reproducirClick()">
             Contacto
         </div>
         <div class="mediosDeContacto" id="0" abierto="false">
             <div class="medioDeContacto">
-                <a htarget="_blank"  href="mailto:raulacostadeveloper@outlook.com?Subject=Contacto%20de%20raulacostaservicio.com%20mail" onclick="reproducirClick()">
+                <a target="_blank"  href="mailto:raulacostadeveloper@outlook.com?Subject=Contacto%20de%20raulacostaservicio.com%20mail" onclick="reproducirClick()">
                     <div class="contenedorImg">
                         <img src="../../Imagenes/OutlookImg.svg" alt="Medio de contacto Outlook">
                     </div>
@@ -92,7 +58,7 @@
                 </a>
             </div>
             <div class="medioDeContacto">
-                <a htarget="_blank"  href="https://www.linkedin.com/in/raulacostaservicio/" onclick="reproducirClick()">
+                <a target="_blank"  href="https://www.linkedin.com/in/raulacostaservicio/" onclick="reproducirClick()">
                     <div class="contenedorImg">
                         <img src="../../Imagenes/linkedin.png" alt="Medio de contacto Outlook">
                     </div>
@@ -106,13 +72,76 @@
         </div>
         <div class="info">
             <div class="titulos">
-                <h1>Mis escritos</h1>
-                <h5>Por Raúl Acosta Developer</h5>
+                <h1>Mis artículos</h1>
+                <h5>Por Raúl Acosta</h5>
                 <br>
-                <h3><a href="https://raulacostadeveloper.com/">Visita mi página web</a></h3>
+                <h3><a href="https://raulacostadeveloper.com/">https://raulacostadeveloper.com/</a></h3>
             </div>
         </div>
     </header>
+    <div class="iconoMenu">
+        <button onclick="abrirMenu(); reproducirClick();">
+            <img src="../../Imagenes/menu.png" alt="Icono Menu">
+        </button>
+    </div>
+    <div id="containerGlobalMenu" class="containerGlobalMenu" style="display: none;">
+        <button class="exterior" onclick="cerrarMenu(); reproducirClick();"></button>
+        <div class="interior" id="interiorMenu">
+            <div class="header" >
+                <div class="izquierda">
+                    <img id="elPersistente1" src="../../Imagenes/FotoPerfil.jpg" alt="Foto de perfil">
+                </div>
+                <div class="derecha">
+                    <div class="arriba">
+                        <span id="elPersistente2">raulacostadeveloper</span>
+                    </div>
+                    <div class="abajo">
+                        <span id="elPersistente3">raulacostadeveloper@outlook.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="elementos">
+                <div class="elementoMenu">
+                    <a href="https://raulacostadeveloper.com/">
+                        <button onpointermove="reproducirPop()">Home</button>
+                    </a>
+                </div>
+                <div class="elementoMenu">
+                    <a href="https://raulacostadeveloper.com/diplomasYCertificados.html">
+                        <button onpointermove="reproducirPop()">Diplomas y certificados</button>
+                    </a>
+                </div>
+                <div class="elementoMenu">
+                    <a href="https://raulacostadeveloper.com/proyectosYEjemplos.html">
+                        <button onpointermove="reproducirPop()">Proyectos y ejemplos</button>
+                    </a>
+                </div>
+                <div class="elementoMenu">
+                    <a href="https://raulacostadeveloper.com/BlogsPages/MisEscritos/">
+                        <button onpointermove="reproducirPop()">Mis escritos</button>
+                    </a>
+                </div>
+                <div class="elementoMenu">
+                    <a href="https://raulacostadeveloper.com/BlogsPages/MisArticulos/">
+                        <button onpointermove="reproducirPop()">Mis artículos</button>
+                    </a>
+                </div>
+                <div class="containerBotonCerrarMenu">
+                    <div class="closeMenu">
+                        <button onclick="cerrarMenu(); reproducirClick();">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrows">
+        <div class="arrow">
+            <a href="#header"><img src="../../Imagenes/uparrowbold.png" alt="uparrowbold"></a>
+        </div>
+        <div class="arrow">
+            <a href="#footer"><img src="../../Imagenes/downarrowbold.png" alt="downarrowbold"></a>
+        </div>
+    </div>
     <section>
         <div class="buscador">
             <article>
